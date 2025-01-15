@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Picture Upload</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+    <h2>Upload Your Profile Picture</h2>
+
+    <div class="input-group">
+      <label for="minDim">Minimum Dimension (L x L):</label>
+      <input type="number" id="minDim" placeholder="Enter minimum dimension (L)" required>
+    </div>
+
+    <div class="input-group">
+      <label for="numPhotos">Number of Photos (N):</label>
+      <input type="number" id="numPhotos" placeholder="Enter number of photos (N)" required>
+    </div>
+
+    <div id="photosInputs"></div>
+
+    <button class="btn" onclick="evaluatePhotos()">Upload Photos</button>
+
+    <div id="result" class="output"></div>
+  </div>
+
+  <script src="Q2.js"></script>
+
+</body>
+</html>
